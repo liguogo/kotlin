@@ -20,7 +20,7 @@ val Int.sp
     get() = this.toFloat().sp
 
 object Utils {
-    @JvmStatic
+    @JvmOverloads
     fun toast(string: String?, duration: Int = Toast.LENGTH_SHORT) {
         Toast.makeText(BaseApplication.currentApplication(), string, duration).show()
     }
